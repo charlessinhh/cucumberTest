@@ -13,8 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 		dryRun = false, // 'true' -> without real execution check every feature file step containing
 						// every method
 		// or not
-
-		monochrome = true, plugin = { "pretty", // output in console window with every step
+		tags = "@ldd", monochrome = true, plugin = { "pretty", // output in console window with every step
 				"html:target/cucumber-reports/cucumber.html" // test generated in target folder
 				, "json:target/cucumber-reports/Cucumber.json", "junit:target/cucumber-reports/Cucumber.xml" }
 
